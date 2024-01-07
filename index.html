@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Master Card  Project</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family: "Poppins", sans-serif;
+            }
+
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: #e3f2fd;
+            }
+
+            .card{
+                position: relative;
+                background-image: url("bg.png");
+                background-size: cover;
+                padding: 25px;
+                border-radius: 28px;
+                max-width: 380px;
+                width: 100%;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            header , .logo{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .logo img{
+                width: 48px;
+                margin-right: 10px;
+            }
+
+            header .chip{
+                width: 60px;
+            }
+
+            h5{
+                font-size: 16px;
+                font-weight: 400;
+                color: white;
+            }
+
+            h6{
+                color: white;
+                font-size: 10px;
+                font-weight: 400;
+            }
+
+            h5.number{
+                font-size: 18px;
+                letter-spacing: 1px;
+                margin-top: 4px;
+            }
+
+            h5.name{
+                margin-top: 20px;
+            }
+
+            .card .card-details{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                margin-top: 40px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <header>
+                <span class="logo">
+                    <img src="./logo.png" alt="logo">
+                    <h5>Master Card</h5>
+                </span>
+                <img src="./chip.png" alt="chip" class="chip">
+            </header>
+            <div class="card-details">
+                <div class="name-number">
+                    <h6>Card Number</h6>
+                    <h5 class="number">7890 2098 6527 2320</h5>
+                    <h5 class="name">Abhishek R Mahato</h5>
+                </div>
+                <div class="valid-date">
+                    <h6>Valid Till</h6>
+                    <h5>07/24</h5>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
